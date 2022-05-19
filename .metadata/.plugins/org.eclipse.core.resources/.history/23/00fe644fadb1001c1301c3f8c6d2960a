@@ -1,0 +1,16 @@
+package com.st.smartrash.common;
+
+public class CategoryTranslation {
+	public String categoryTranslation(String category_name) {
+		switch(category_name) {
+		case "can": category_name = "캔"; break;
+		case "fluorescent_light": category_name = "형광등"; break;
+		case "glass": category_name = "유리"; break;
+		case "paper": category_name = "종이"; break;
+		case "plastic": category_name = "플라스틱"; break;
+		case "polystyrene": category_name = "스티로폼"; break;
+		case "vinyl": category_name = "비닐"; break;
+		}
+		return category_name;
+	}
+}

@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+<script type="text/javascript">
+const naverLogin = new naver.LoginWithNaverId(
+		{
+			clientId: "YOUR_CLIENT_ID",
+			callbackUrl: "YOUR_CALLBACK_URL",
+			loginButton: {color: "green", type: 2, height: 40}
+		}
+	);
+naverLogin.init();
+</script>
+</head>
+<body>
+  <div class="container">
+    <h1>Naver Login API 사용하기</h1>
+    <div class="login-area">
+      <div id="message">
+        로그인 버튼을 눌러 로그인 해주세요.
+      </div>
+      <div id="button_area"> 
+        <div id="naverIdLogin"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

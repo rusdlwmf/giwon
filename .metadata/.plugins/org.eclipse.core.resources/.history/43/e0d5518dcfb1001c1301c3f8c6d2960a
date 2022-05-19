@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+"-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="noticeMapper">
+
+<resultMap type="Notice" id="resultNotice">
+		<id column="notice_no" property="notice_no" />
+		<result column="notice_title" property="notice_title" />
+		<result column="notice_writer" property="notice_writer" />
+		<result column="notice_content" property="notice_content" />
+		<result column="notice_original_filepath" property="notice_original_filepath" />
+		<result column="notice_rename_filepath" property="notice_rename_filepath" />
+		<result column="notice_readcount" property="notice_readcount" />
+		<result column="notice_date" property="notice_date" />
+	</resultMap>
+	
+	<select id="getListCount" resultType="_int">
+		select count(*) from t_notice
+	</select>	
+	
+	<select id="selectList" parameterType="Paging" resultMap="resultNotice">
+	<![CDATA[
+			SELECT NOTICE_NO, NOTICE_TITLE, NOTICE_WRITER, 
+				   NOTICE_CONTENT, NOTICE_ORIGINAL_FILEPATH, 
+				   NOTICE_RENAME_FILEPATH, NOTICE_READCOUNT, NOTICE_DATE
+			FROM (SELECT ROWNUM NUM, N.* 
+      			  FROM (SELECT * 
+            			FROM T_NOTICE 
+            			ORDER BY NOTICE_DATE DESC) N)
+			WHERE NUM >= ${startRow} AND NUM <= ${endRow}
+	]]>
+	</select>
+</mapper>

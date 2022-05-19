@@ -1,0 +1,19 @@
+[00:54:59][WARN ][DispatcherServlet.java:1251] - No mapping for POST /smartrash/boardDetailView.do
+[00:55:08][WARN ][DispatcherServlet.java:1251] - No mapping for POST /smartrash/categorySelect.do
+[01:01:26][WARN ][DispatcherServlet.java:1251] - No mapping for POST /smartrash/boardDetailView.do
+[09:28:53][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[09:28:55][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2683 ms
+[09:28:56][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[09:28:58][INFO ][FrameworkServlet.java:547] - Completed initialization in 2433 ms
+[17:28:40][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:28:43][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 3291 ms
+[17:28:44][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:28:46][INFO ][FrameworkServlet.java:547] - Completed initialization in 2864 ms
+[20:23:53][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:23:56][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 3036 ms
+[20:23:56][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:23:59][INFO ][FrameworkServlet.java:547] - Completed initialization in 3028 ms
+[21:04:54][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:04:57][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2459 ms
+[21:04:57][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:04:59][INFO ][FrameworkServlet.java:547] - Completed initialization in 2331 ms

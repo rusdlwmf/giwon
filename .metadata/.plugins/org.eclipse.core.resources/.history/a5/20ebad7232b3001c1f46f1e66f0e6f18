@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC
+"-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL" />
+		<setting name="cacheEnabled" value="false" />
+	</settings>
+	
+	<typeAliases>
+<<<<<<< HEAD
+		<typeAlias type="com.st.smartrash.user.model.vo.User" alias="User" />
+		<!-- <typeAlias type="com.st.smartrash.trash.model.vo.Trash" alias="Trash" /> -->
+=======
+		<!-- <typeAlias type="com.st.smartrash.user.model.vo.User" alias="User" /> -->
+		 <typeAlias type="com.st.smartrash.trash.model.vo.Trash" alias="Trash" />
+>>>>>>> refs/remotes/origin/kgw
+		<typeAlias type="com.st.smartrash.category.model.vo.Category" alias="Category" />
+		<typeAlias type="com.st.smartrash.notice.model.vo.Notice" alias="Notice" />
+		<typeAlias type="com.st.smartrash.board.model.vo.Board" alias="Board" />
+		<typeAlias type="com.st.smartrash.common.Paging" alias="Paging" />
+	</typeAliases>
+	
+	<mappers>
+<<<<<<< HEAD
+		<mapper resource="mappers/user-mapper.xml" />
+		<!-- <mapper resource="mappers/trash-mapper.xml" /> -->
+=======
+		<!-- <mapper resource="mappers/user-mapper.xml" /> -->
+	    <mapper resource="mappers/trash-mapper.xml" /> 
+>>>>>>> refs/remotes/origin/kgw
+		<mapper resource="mappers/category-mapper.xml" />
+		<mapper resource="mappers/notice-mapper.xml" />
+		<mapper resource="mappers/board-mapper.xml" />	
+	</mappers>
+</configuration>

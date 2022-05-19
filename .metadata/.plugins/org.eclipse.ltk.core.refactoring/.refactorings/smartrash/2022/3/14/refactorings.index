@@ -1,0 +1,49 @@
+1648544575186	Move file
+1648547846662	Delete element
+1648547849912	Copy compilation unit
+1648547851770	Delete element
+1648547876539	Move compilation unit
+1648547974566	Delete elements
+1648548110408	Delete element
+1648548286044	Move elements
+1648548289157	Delete element
+1648554250987	Rename resource 'footer.jsp'
+1648554257882	Rename resource 'navigation.jsp'
+1648554338037	Delete element
+1648554678705	Delete element
+1648555549305	Rename resource 'blog-post.html'
+1648555607710	Rename resource 'contact.html'
+1648555735471	Rename resource 'faq.html'
+1648555778103	Delete element
+1648555784548	Rename resource 'portfolio-item.html'
+1648555816322	Rename resource 'portfolio-overview.html'
+1648555850392	Rename resource 'pricing.html'
+1648736592241	Delete element
+1648736593249	Delete element
+1648736598738	Delete elements
+1648736669891	Copy package
+1648736702242	Rename package 'com.st.smartrash.board.model.dao.copy'
+1648736879836	Rename package 'com.st.smartrash.board.user.dao'
+1648736951552	Rename package 'com.st.smartrash.category'
+1648737318410	Rename package 'com.st.smartrash.category.dao'
+1648737338491	Rename package 'com.st.smartrash.category.service'
+1648737342886	Rename package 'com.st.smartrash.category.vo'
+1648737641370	Rename package 'com.st.smartrash.notice.dao'
+1648737647879	Rename package 'com.st.smartrash.notice.service'
+1648737654211	Rename package 'com.st.smartrash.notice.vo'
+1648738053859	Rename package 'com.st.smartrash.trash.dao'
+1648738060696	Rename package 'com.st.smartrash.trash.service'
+1648738067353	Rename package 'com.st.smartrash.trash.vo'
+1648738094625	Rename package 'com.st.smartrash.user.dao'
+1648738100513	Rename package 'com.st.smartrash.user.service'
+1648738109664	Rename package 'com.st.smartrash.user.vo'
+1648740965886	Rename type 'T_BoardDao'
+1648740975767	Rename type 'T_BoardService'
+1648740985476	Rename type 'T_BoardServiceImpl'
+1648740998336	Rename type 'T_Board'
+1648741090175	Delete elements
+1648741534577	Rename resource 'pricing.jsp'
+1648741569281	Rename resource 'categorylist.jsp'
+1648745779395	Move file
+1648748033808	Rename package 'mapper'
+1648748770299	Delete element

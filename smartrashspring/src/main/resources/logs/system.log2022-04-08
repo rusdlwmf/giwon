@@ -1,0 +1,5 @@
+[16:59:39][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[16:59:42][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2943 ms
+[16:59:42][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[16:59:46][INFO ][FrameworkServlet.java:547] - Completed initialization in 3852 ms
+[17:03:50][WARN ][DispatcherServlet.java:1251] - No mapping for GET /smartrash/moveDescPage.do

@@ -1,0 +1,13 @@
+INDEX VERSION 1.4+C:\smartrash_workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+746598592.index
+2917449594.index
+70119159.index
+854300407.index
+1205804700.index
+3081290311.index
+695770110.index
+441055188.index
+1069231346.index
+2022116482.index
+1782833921.index
+1946553332.index

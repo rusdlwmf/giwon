@@ -1,0 +1,15 @@
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_devtest=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_kgw=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_kgw2=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_psb=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_psb2=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_psb4=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_sso=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_sso2=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_sws=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\smartrash_workspace\\smartrash\\.git_sws2=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>0407 1\:37</message>\r\n<message>sws2 merge</message>\r\n<message>main fix</message>\r\n<message>asdf</message>\r\n<message>csv fix</message>\r\n<message>kgw datapush.do</message>\r\n<message>Merge remote-tracking branch &apos;origin/psb4&apos;&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;src/main/webapp/WEB-INF/views/common/navi.jsp&\#x0A;</message>\r\n<message>board update</message>\r\n<message>fix</message>\r\n<message>Merge remote-tracking branch &apos;origin/kgw&apos;&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;src/main/java/com/st/smartrash/HomeController.java&\#x0A;&\#x09;src/main/resources/mybatis-config.xml&\#x0A;&\#x09;src/main/webapp/WEB-INF/views/common/navi.jsp&\#x0A;</message>\r\n</messages>
+eclipse.preferences.version=1
+resourcehistory_graph_split=255,744
+resourcehistory_rev_split=700,300

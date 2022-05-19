@@ -1,0 +1,1139 @@
+[03:14:43][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[03:14:45][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2107 ms
+[03:14:45][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[03:14:46][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[03:14:46][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1011)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4952)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5266)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1427)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1417)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 28 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 41 more
+[03:31:41][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[03:31:43][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1967 ms
+[03:31:44][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[03:31:44][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[03:31:44][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1011)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4952)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5266)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1427)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1417)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 28 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 41 more
+[03:36:12][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[03:36:14][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1968 ms
+[03:36:14][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[03:36:15][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[03:36:15][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1011)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4952)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5266)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1427)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1417)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 28 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 41 more
+[03:36:40][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[03:36:40][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[03:36:40][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:789)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:688)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:388)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at org.apache.jasper.runtime.PageContextImpl.doForward(PageContextImpl.java:735)
+	at org.apache.jasper.runtime.PageContextImpl.forward(PageContextImpl.java:707)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:112)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:367)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:881)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1647)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 54 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 67 more
+[14:07:21][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:07:23][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2251 ms
+[14:07:23][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:07:25][INFO ][FrameworkServlet.java:547] - Completed initialization in 2039 ms
+[14:07:47][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:07:49][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2007 ms
+[14:07:49][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:07:51][INFO ][FrameworkServlet.java:547] - Completed initialization in 1870 ms
+[14:08:37][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:08:39][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1967 ms
+[14:08:39][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:08:41][INFO ][FrameworkServlet.java:547] - Completed initialization in 1836 ms
+[14:16:32][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:16:34][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1929 ms
+[14:16:34][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:16:36][INFO ][FrameworkServlet.java:547] - Completed initialization in 1815 ms
+[14:17:58][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:17:59][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1910 ms
+[14:18:00][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:18:01][INFO ][FrameworkServlet.java:547] - Completed initialization in 1806 ms
+[14:45:41][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:45:43][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1981 ms
+[14:45:43][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:45:44][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[14:45:44][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1011)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4952)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5266)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1427)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1417)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 28 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 41 more
+[14:45:47][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:45:47][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[14:45:47][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:789)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:688)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:388)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at org.apache.jasper.runtime.PageContextImpl.doForward(PageContextImpl.java:735)
+	at org.apache.jasper.runtime.PageContextImpl.forward(PageContextImpl.java:707)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:112)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:367)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:881)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1647)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 54 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 67 more
+[14:46:26][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:46:28][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1987 ms
+[14:46:28][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:46:29][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[14:46:29][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1011)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4952)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5266)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1427)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1417)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 28 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 41 more
+[14:46:33][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:46:33][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[14:46:33][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:789)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:688)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:388)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at org.apache.jasper.runtime.PageContextImpl.doForward(PageContextImpl.java:735)
+	at org.apache.jasper.runtime.PageContextImpl.forward(PageContextImpl.java:707)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:112)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:367)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:881)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1647)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 54 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 67 more
+[14:47:36][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:47:38][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1962 ms
+[14:47:38][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:47:40][INFO ][FrameworkServlet.java:547] - Completed initialization in 1968 ms
+[14:47:51][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:47:57][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[14:47:59][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1927 ms
+[14:47:59][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:47:59][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[14:47:59][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1011)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4952)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5266)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1427)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1417)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 28 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 41 more
+[14:48:06][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[14:48:06][WARN ][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+[14:48:06][ERROR][FrameworkServlet.java:534] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1173)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1118)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:789)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:688)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:388)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at org.apache.jasper.runtime.PageContextImpl.doForward(PageContextImpl.java:735)
+	at org.apache.jasper.runtime.PageContextImpl.forward(PageContextImpl.java:707)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:112)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:367)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:881)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1647)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.st.smartrash.HomeController] from ClassLoader [ParallelWebappClassLoader
+  context: smartrash
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@78308db1
+]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:273)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 54 more
+Caused by: java.lang.NoClassDefFoundError: jep/JepException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 63 more
+Caused by: java.lang.ClassNotFoundException: jep.JepException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1415)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1223)
+	... 67 more
+[15:03:28][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[15:03:30][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2009 ms
+[15:03:30][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[15:03:32][INFO ][FrameworkServlet.java:547] - Completed initialization in 1886 ms
+[15:06:09][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[15:06:12][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2072 ms
+[15:06:12][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[15:06:14][INFO ][FrameworkServlet.java:547] - Completed initialization in 1901 ms
+[15:07:36][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[15:07:38][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1960 ms
+[15:07:38][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[15:07:40][INFO ][FrameworkServlet.java:547] - Completed initialization in 1866 ms
+[15:09:30][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[15:09:32][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2075 ms
+[15:09:32][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[15:09:34][INFO ][FrameworkServlet.java:547] - Completed initialization in 1875 ms
+[15:12:53][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[15:12:55][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1964 ms
+[15:12:55][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[15:12:57][INFO ][FrameworkServlet.java:547] - Completed initialization in 1853 ms
+[15:15:59][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[15:16:01][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1955 ms
+[15:16:01][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[15:16:03][INFO ][FrameworkServlet.java:547] - Completed initialization in 1828 ms
+[17:14:59][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:15:01][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1967 ms
+[17:15:01][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:15:03][INFO ][FrameworkServlet.java:547] - Completed initialization in 1901 ms
+[17:15:09][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:15:11][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1879 ms
+[17:15:11][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:15:13][INFO ][FrameworkServlet.java:547] - Completed initialization in 1731 ms
+[17:17:50][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:17:52][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1875 ms
+[17:17:52][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:17:54][INFO ][FrameworkServlet.java:547] - Completed initialization in 1788 ms
+[17:18:06][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:18:08][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1891 ms
+[17:18:08][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:18:10][INFO ][FrameworkServlet.java:547] - Completed initialization in 1899 ms
+[17:26:20][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:26:22][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2007 ms
+[17:26:22][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:26:23][INFO ][FrameworkServlet.java:547] - Completed initialization in 1757 ms
+[17:26:26][WARN ][DispatcherServlet.java:1251] - No mapping for GET /smartrash/trashListView.do
+[17:26:29][WARN ][DispatcherServlet.java:1251] - No mapping for GET /smartrash/trashMenubar.do
+[17:26:52][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:26:54][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1955 ms
+[17:26:54][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:26:56][INFO ][FrameworkServlet.java:547] - Completed initialization in 1723 ms
+[17:27:06][WARN ][DispatcherServlet.java:1251] - No mapping for GET /smartrash/trashListView.do
+[17:28:03][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:28:05][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2113 ms
+[17:28:05][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:28:07][INFO ][FrameworkServlet.java:547] - Completed initialization in 1756 ms
+[17:32:52][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:32:54][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2203 ms
+[17:32:54][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:32:56][INFO ][FrameworkServlet.java:547] - Completed initialization in 2056 ms
+[17:47:38][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:47:41][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2007 ms
+[17:47:41][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:47:43][INFO ][FrameworkServlet.java:547] - Completed initialization in 1893 ms
+[17:56:13][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:56:15][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1875 ms
+[17:56:15][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:56:17][INFO ][FrameworkServlet.java:547] - Completed initialization in 1831 ms
+[17:58:46][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[17:58:48][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1881 ms
+[17:58:48][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[17:58:50][INFO ][FrameworkServlet.java:547] - Completed initialization in 1747 ms
+[18:02:15][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[18:02:17][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1876 ms
+[18:02:17][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[18:02:18][INFO ][FrameworkServlet.java:547] - Completed initialization in 1813 ms
+[18:04:10][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[18:04:12][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1870 ms
+[18:04:12][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[18:04:14][INFO ][FrameworkServlet.java:547] - Completed initialization in 1778 ms
+[18:05:35][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[18:05:36][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1876 ms
+[18:05:36][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[18:05:38][INFO ][FrameworkServlet.java:547] - Completed initialization in 1771 ms
+[18:19:46][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[18:19:48][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2487 ms
+[18:19:49][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[18:19:51][INFO ][FrameworkServlet.java:547] - Completed initialization in 2432 ms
+[18:46:36][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[18:46:38][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2042 ms
+[18:46:38][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[18:46:40][INFO ][FrameworkServlet.java:547] - Completed initialization in 1983 ms
+[18:47:44][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[18:47:46][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2081 ms
+[18:47:46][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[18:47:48][INFO ][FrameworkServlet.java:547] - Completed initialization in 2166 ms
+[19:09:48][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:09:50][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1989 ms
+[19:09:50][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:09:52][INFO ][FrameworkServlet.java:547] - Completed initialization in 1913 ms
+[19:11:13][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:11:15][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1988 ms
+[19:11:15][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:11:17][INFO ][FrameworkServlet.java:547] - Completed initialization in 1920 ms
+[19:11:42][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:11:44][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2018 ms
+[19:11:44][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:11:46][INFO ][FrameworkServlet.java:547] - Completed initialization in 1896 ms
+[19:13:10][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:13:12][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2090 ms
+[19:13:12][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:13:14][INFO ][FrameworkServlet.java:547] - Completed initialization in 1934 ms
+[19:14:12][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:14:14][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 1978 ms
+[19:14:14][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:14:16][INFO ][FrameworkServlet.java:547] - Completed initialization in 1965 ms
+[19:16:13][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:16:15][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2145 ms
+[19:16:15][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:16:17][INFO ][FrameworkServlet.java:547] - Completed initialization in 2149 ms
+[19:16:35][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:16:37][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2185 ms
+[19:16:37][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:16:40][INFO ][FrameworkServlet.java:547] - Completed initialization in 2101 ms
+[19:18:37][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:18:39][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2157 ms
+[19:18:39][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:18:41][INFO ][FrameworkServlet.java:547] - Completed initialization in 2081 ms
+[19:19:13][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:19:15][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2275 ms
+[19:19:15][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:19:17][INFO ][FrameworkServlet.java:547] - Completed initialization in 2023 ms
+[19:19:41][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:19:43][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2210 ms
+[19:19:43][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:19:45][INFO ][FrameworkServlet.java:547] - Completed initialization in 2103 ms
+[19:20:53][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:20:55][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2262 ms
+[19:20:55][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:20:58][INFO ][FrameworkServlet.java:547] - Completed initialization in 2090 ms
+[19:21:05][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:21:07][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2125 ms
+[19:21:07][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:21:09][INFO ][FrameworkServlet.java:547] - Completed initialization in 2030 ms
+[19:21:38][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:21:40][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2217 ms
+[19:21:40][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:21:42][INFO ][FrameworkServlet.java:547] - Completed initialization in 2127 ms
+[19:24:01][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:24:03][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2221 ms
+[19:24:04][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:24:06][INFO ][FrameworkServlet.java:547] - Completed initialization in 2077 ms
+[19:24:55][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:24:57][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2264 ms
+[19:24:57][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:24:59][INFO ][FrameworkServlet.java:547] - Completed initialization in 2147 ms
+[19:28:39][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:28:41][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2110 ms
+[19:28:41][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:28:43][INFO ][FrameworkServlet.java:547] - Completed initialization in 2007 ms
+[19:31:17][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:31:19][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2174 ms
+[19:31:19][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:31:21][INFO ][FrameworkServlet.java:547] - Completed initialization in 2050 ms
+[19:34:20][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:34:22][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2262 ms
+[19:34:22][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:34:24][INFO ][FrameworkServlet.java:547] - Completed initialization in 2077 ms
+[19:35:35][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:35:37][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2104 ms
+[19:35:37][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:35:39][INFO ][FrameworkServlet.java:547] - Completed initialization in 1991 ms
+[19:37:37][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:37:39][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2144 ms
+[19:37:39][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:37:41][INFO ][FrameworkServlet.java:547] - Completed initialization in 2051 ms
+[19:42:34][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:42:36][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2136 ms
+[19:42:36][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:42:38][INFO ][FrameworkServlet.java:547] - Completed initialization in 2016 ms
+[19:46:16][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:46:19][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2086 ms
+[19:46:19][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:46:21][INFO ][FrameworkServlet.java:547] - Completed initialization in 2012 ms
+[19:53:21][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:53:23][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2149 ms
+[19:53:23][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:53:25][INFO ][FrameworkServlet.java:547] - Completed initialization in 2032 ms
+[19:54:22][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:54:25][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2105 ms
+[19:54:25][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:54:27][INFO ][FrameworkServlet.java:547] - Completed initialization in 2024 ms
+[19:55:09][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:55:11][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2134 ms
+[19:55:11][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:55:13][INFO ][FrameworkServlet.java:547] - Completed initialization in 2042 ms
+[19:58:08][WARN ][AbstractHandlerExceptionResolver.java:199] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[19:59:16][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[19:59:19][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2102 ms
+[19:59:19][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[19:59:21][INFO ][FrameworkServlet.java:547] - Completed initialization in 2052 ms
+[20:12:53][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:12:55][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2104 ms
+[20:12:55][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:12:57][INFO ][FrameworkServlet.java:547] - Completed initialization in 2125 ms
+[20:13:30][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:13:32][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2207 ms
+[20:13:32][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:13:34][INFO ][FrameworkServlet.java:547] - Completed initialization in 2074 ms
+[20:16:50][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:16:52][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2114 ms
+[20:16:53][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:16:55][INFO ][FrameworkServlet.java:547] - Completed initialization in 2012 ms
+[20:17:13][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:17:16][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2252 ms
+[20:17:16][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:17:18][INFO ][FrameworkServlet.java:547] - Completed initialization in 2059 ms
+[20:19:57][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:19:59][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2168 ms
+[20:19:59][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:20:01][INFO ][FrameworkServlet.java:547] - Completed initialization in 2074 ms
+[20:41:58][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:42:00][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2275 ms
+[20:42:00][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:42:02][INFO ][FrameworkServlet.java:547] - Completed initialization in 2343 ms
+[20:42:40][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:42:42][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2222 ms
+[20:42:42][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:42:44][INFO ][FrameworkServlet.java:547] - Completed initialization in 2028 ms
+[20:42:57][WARN ][AbstractHandlerExceptionResolver.java:199] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'board_no' is not present]
+[20:43:35][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:43:37][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2196 ms
+[20:43:37][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:43:39][INFO ][FrameworkServlet.java:547] - Completed initialization in 2024 ms
+[20:45:10][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:45:12][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2277 ms
+[20:45:12][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:45:14][INFO ][FrameworkServlet.java:547] - Completed initialization in 2056 ms
+[20:46:25][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:46:27][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2204 ms
+[20:46:27][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:46:29][INFO ][FrameworkServlet.java:547] - Completed initialization in 2043 ms
+[20:50:15][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:50:17][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2221 ms
+[20:50:17][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:50:20][INFO ][FrameworkServlet.java:547] - Completed initialization in 2095 ms
+[20:53:20][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:53:23][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2362 ms
+[20:53:23][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:53:25][INFO ][FrameworkServlet.java:547] - Completed initialization in 1993 ms
+[20:53:28][WARN ][DispatcherServlet.java:1251] - No mapping for GET /smartrash/boardlist.do
+[20:54:36][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:54:38][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2279 ms
+[20:54:38][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:54:40][INFO ][FrameworkServlet.java:547] - Completed initialization in 2091 ms
+[20:55:26][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:55:29][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2361 ms
+[20:55:29][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:55:31][INFO ][FrameworkServlet.java:547] - Completed initialization in 2143 ms
+[20:58:33][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[20:58:35][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2201 ms
+[20:58:35][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[20:58:37][INFO ][FrameworkServlet.java:547] - Completed initialization in 2066 ms
+[21:07:41][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:07:43][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2249 ms
+[21:07:43][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:07:45][INFO ][FrameworkServlet.java:547] - Completed initialization in 2310 ms
+[21:09:26][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:09:28][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2275 ms
+[21:09:29][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:09:31][INFO ][FrameworkServlet.java:547] - Completed initialization in 2104 ms
+[21:10:13][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:10:15][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2184 ms
+[21:10:15][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:10:17][INFO ][FrameworkServlet.java:547] - Completed initialization in 2090 ms
+[21:12:34][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:12:36][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2165 ms
+[21:12:36][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:12:38][INFO ][FrameworkServlet.java:547] - Completed initialization in 2101 ms
+[21:34:52][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:34:54][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2114 ms
+[21:34:54][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:34:56][INFO ][FrameworkServlet.java:547] - Completed initialization in 2143 ms
+[21:37:59][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:38:02][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2240 ms
+[21:38:02][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:38:04][INFO ][FrameworkServlet.java:547] - Completed initialization in 2059 ms
+[21:51:31][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:51:33][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2461 ms
+[21:51:33][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:51:35][INFO ][FrameworkServlet.java:547] - Completed initialization in 2162 ms
+[21:51:59][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:52:02][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2356 ms
+[21:52:02][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:52:04][INFO ][FrameworkServlet.java:547] - Completed initialization in 2268 ms
+[21:54:51][INFO ][ContextLoader.java:271] - Root WebApplicationContext: initialization started
+[21:54:54][INFO ][ContextLoader.java:307] - Root WebApplicationContext initialized in 2891 ms
+[21:54:54][INFO ][FrameworkServlet.java:525] - Initializing Servlet 'appServlet'
+[21:54:56][INFO ][FrameworkServlet.java:547] - Completed initialization in 2202 ms

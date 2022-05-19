@@ -1,0 +1,34 @@
+package com.st.smartrash.common;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class createCSV {
+	public static void main(String args[]){
+        try (PrintWriter writer = new PrintWriter(new File("test.csv"))) {
+
+            StringBuilder sb = new StringBuilder();
+            sb.append("id");
+            sb.append(',');
+            sb.append("Name");
+            sb.append(',');
+            sb.append("Address");
+            sb.append('\n');
+
+            sb.append("101");
+            sb.append(',');
+            sb.append("John Doe");
+            sb.append(',');
+            sb.append("Las Vegas");
+            sb.append('\n');
+
+            writer.write(sb.toString());
+            writer.close();
+            System.out.println("done!");
+
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+        createCSV testCSV =  new createCSV();
+}

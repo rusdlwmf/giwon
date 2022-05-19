@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+"-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="trashMapper">
+
+	<resultMap type="Trash" id="resultList">
+		<result column="trash_no" property="trash_no" />
+		<result column="user_no" property="user_no" />
+		<result column="category_no" property="category_no" />
+		<result column="trash_path" property="trash_path" />
+		<result column="trash_date" property="trash_date" />
+		<result column="report" property="report" />
+	</resultMap>
+
+	<!-- 전체 쓰레기 조회 -->
+ 	<select id="selectTrashAll" resultMap="resultList">
+		select * from t_trash
+	</select> 
+
+	<!-- 쓰레기 추가 -->
+	<insert id="trashInsert" parameterType="Trash">
+		insert into t_trash
+		values ( t_tn_s.nextval, #{user_no}, #{category_no}, #{trash_path}, default, default )
+	</insert>
+
+	<!-- 쓰레기 개수 카운트 -->	
+	<select id="getListCount" resultType="_int">
+		select count(*) from t_trash
+	</select>	
+
+	<!-- 쓰레기 조회 -->
+	<select id="selectTrash" parameterType="Trash" resultMap="resultList">
+		select * from T_TRASH where trash_no = #{ trash_no }
+	</select>
+</mapper>
